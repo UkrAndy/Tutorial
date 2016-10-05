@@ -1,0 +1,6 @@
+﻿  Game.cpp
+c:\users\andii\documents\visual studio 2015\projects\consoleapplication18\consoleapplication18\iserializable.h(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\andii\documents\visual studio 2015\projects\consoleapplication18\consoleapplication18\animal.h(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\andii\documents\visual studio 2015\projects\consoleapplication18\consoleapplication18\animal.h(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\andii\documents\visual studio 2015\projects\consoleapplication18\consoleapplication18\animal.h(4): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  ConsoleApplication18.vcxproj -> C:\Users\Andii\documents\visual studio 2015\Projects\ConsoleApplication18\Debug\ConsoleApplication18.exe
