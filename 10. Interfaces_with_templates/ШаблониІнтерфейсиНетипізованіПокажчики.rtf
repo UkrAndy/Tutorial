@@ -1,0 +1,210 @@
+{\rtf1\ansi\ansicpg1251\deff0\nouicompat\deflang1058{\fonttbl{\f0\fnil\fcharset204 Calibri;}{\f1\fnil Consolas;}{\f2\fnil\fcharset0 Calibri;}{\f3\fnil\fcharset204 Consolas;}}
+{\colortbl ;\red155\green155\blue155;\red30\green30\blue30;\red214\green157\blue133;\red220\green220\blue220;\red86\green156\blue214;\red200\green200\blue200;\red180\green180\blue180;\red78\green201\blue176;\red218\green218\blue218;\red127\green127\blue127;\red181\green206\blue168;\red87\green166\blue74;}
+{\*\generator Riched20 10.0.10240}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\'d1\'f2\'e2\'ee\'f0\'e8\'f2\'e8 \'ea\'eb\'e0\'f1 \'d2\'ce\'d7\'ca\'c0 \'e7 \'ec\'ee\'e6\'eb\'e8\'e2\'b3\'f1\'f2\'fe \'e2\'e8\'e1\'ee\'f0\'f3 \'f2\'e8\'ef\'b3\'e2 \'e4\'e0\'ed\'e8\'f5 \'ef\'ee\'eb\'b3\'e2 \'f2\'e0 \'ec\'e5\'f2\'ee\'e4\'b3\'e2 (\'f8\'e0\'e1\'eb\'ee\'ed\'e8)\par
+\cf1\highlight2\f1\fs19 #include\cf3 <iostream>\cf4\par
+\cf5 using\cf4  \cf5 namespace\cf4  \cf6 std\cf7 ;\cf4\par
+\cf5 template\cf7 <\cf5 typename\cf4  \cf8 MyType\cf7 >\cf4\par
+\cf5 class\cf4  \cf8 Point\cf4\par
+\cf7\{\cf4\par
+\tab\cf5 int\cf4  \cf9 r\cf7 ;\cf4\par
+\cf5 public\cf7 :\cf4\par
+\tab\cf8 MyType\cf4  \cf9 x\cf7 ,\cf4  \cf9 y\cf7 ;\cf4\par
+\tab\cf8 MyType\cf4  \cf6 Distance\cf7 (\cf5 const\cf4  \cf8 Point\cf4  \cf7 &\cf10 obj\cf7 )\cf4\par
+\tab\cf7\{\cf4\par
+\tab\tab\cf5 return\cf4  \cf7 (\cf8 MyType\cf7 )\cf4 sqrt\cf7 (\cf4 pow\cf7 (\cf9 x\cf4  \cf7 -\cf4  \cf10 obj\cf7 .\cf9 x\cf7 ,\cf4  \cf11 2\cf7 )\cf4  \cf7 +\cf4  pow\cf7 (\cf9 y\cf4  \cf7 -\cf4  \cf10 obj\cf7 .\cf9 y\cf7 ,\cf4  \cf11 2\cf4  \cf7 )\cf4  \cf7 );\cf4\par
+\tab\cf7\}\cf4\par
+\tab\cf6 Point\cf7 (\cf8 MyType\cf4  \cf10 x\cf7 ,\cf4  \cf8 MyType\cf4  \cf10 y\cf7 )\cf4  \cf7 :\cf9 x\cf7 (\cf10 x\cf7 ),\cf4  \cf9 y\cf7 (\cf10 y\cf7 )\cf4\par
+\tab\cf7\{\cf4\par
+\tab\cf7\}\cf4\par
+\cf7\};\cf4\par
+\cf5 void\cf4  \cf6 main\cf7 ()\cf4\par
+\cf7\{\cf4\par
+\tab\cf8 Point\cf7 <\cf5 int\cf7 >\cf4  \cf6 P1\cf7 (\cf11 2\cf7 ,\cf4  \cf11 3\cf7 );\cf4\par
+\tab\cf8 Point\cf7 <\cf5 int\cf7 >\cf4  \cf6 P2\cf7 (\cf11 4\cf7 ,\cf4  \cf11 1\cf7 );\cf4\par
+\tab\cf6 cout\cf4  \cf7 <<\cf4  \cf3 "Dist="\cf4  \cf7 <<\cf4  \cf6 P1\cf7 .\cf6 Distance\cf7 (\cf6 P2\cf7 )\cf4  \cf7 <<\cf4  \cf6 endl\cf7 ;\cf4\par
+\tab\cf8 Point\cf7 <\cf5 double\cf7 >\cf4  \cf6 dP1\cf7 (\cf11 2\cf7 ,\cf4  \cf11 3\cf7 );\cf4\par
+\tab\cf8 Point\cf7 <\cf5 double\cf7 >\cf4  \cf6 dP2\cf7 (\cf11 4\cf7 ,\cf4  \cf11 1\cf7 );\cf4\par
+\tab\cf6 cout\cf4  \cf7 <<\cf4  \cf3 "Dist="\cf4  \cf7 <<\cf4  \cf6 dP1\cf7 .\cf6 Distance\cf7 (\cf6 dP2\cf7 )\cf4  \cf7 <<\cf4  \cf6 endl\cf7 ;\cf4\par
+\tab\cf6 system\cf7 (\cf3 "pause"\cf7 );\cf4\par
+\cf7\}\cf0\highlight0\f2\fs22\lang9\par
+\f0\lang1058\'cf\'f0\'e8\'ea\'eb\'e0\'e4. \'ce\'ef\'e8\'f1\'e0\'f2\'e8 \'b3\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1, \'f9\'ee \'ec\'b3\'f1\'f2\'e8\'f2\'fc \'ee\'ef\'e8\'f1 \'ec\'e5\'f2\'ee\'e4\'b3\'e2 \'e7\'ed\'e0\'f5\'ee\'e4\'e6\'e5\'ed\'ed\'ff \'ef\'eb\'ee\'f9\'b3 \'f2\'e0 \'ec\'e5\'f2\'ee\'e4 \'e2\'e8\'e2\'e5\'e4\'e5\'ed\'ed\'ff. \'cd\'e0 \'ee\'f1\'ed\'ee\'e2\'b3 \'f6\'fc\'ee\'e3\'ee \'b3\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1\'e0 \'f1\'f2\'e2\'ee\'f0\'e8\'f2\'e8 \'e4\'e2\'e0 \'ea\'eb\'e0\'f1\'e8, \'f9\'ee \'f0\'e5\'e0\'eb\'b3\'e7\'ee\'e2\'f3\'fe\'f2\'fc \'e9\'ee\'e3\'ee \'ec\'e5\'f2\'ee\'e4\'e8\par
+\cf1\highlight2\f1\fs19 #include\cf3 <iostream>\cf4\par
+\cf5 using\cf4  \cf5 namespace\cf4  \cf6 std\cf7 ;\cf4\par
+\cf5 __interface\cf4  \cf8 IOper\cf4\par
+\cf7\{\cf4\par
+\tab\cf5 double\cf4  \cf6 S\cf7 ();\cf4\par
+\tab\cf5 void\cf4  \cf6 show\cf7 ();\cf4\par
+\cf7\};\cf4\par
+\cf5 __interface\cf4  \cf8 ISecond\cf4\par
+\cf7\{\cf4\tab\par
+\tab\cf5 void\cf4  \cf6 printt\cf7 ();\cf4\par
+\cf7\};\cf4\par
+\cf12 //----------------------\cf4\par
+\cf5 class\cf4  \cf8 Rect\cf4  \cf7 :\cf4  \cf5 public\cf4  \cf8 IOper\cf7 ,\cf4  \cf5 public\cf4  \cf8 ISecond\cf4\par
+\cf7\{\cf4\par
+\cf5 public\cf7 :\cf4\par
+\tab\cf5 double\cf4  \cf9 a\cf7 ,\cf4  \cf9 b\cf7 ;\cf4\par
+\tab\cf6 Rect\cf7 (\cf5 double\cf4  \cf10 a\cf7 ,\cf4  \cf5 double\cf4  \cf10 b\cf7 )\cf4  \cf7 :\cf9 a\cf7 (\cf10 a\cf7 ),\cf4  \cf9 b\cf7 (\cf10 b\cf7 )\{\}\cf4\par
+\tab\cf5 void\cf4  \cf6 printt\cf7 ()\cf4\par
+\tab\cf7\{\cf4\par
+\tab\tab\cf6 cout\cf4  \cf7 <<\cf4  \cf3 "Hello \\n"\cf7 ;\cf4\par
+\tab\cf7\}\cf4\par
+\tab\cf5 double\cf4  \cf6 S\cf7 ()\cf4\par
+\tab\cf7\{\cf4\par
+\tab\tab\cf5 return\cf4  \cf9 a\cf7 *\cf9 b\cf7 ;\cf4\par
+\tab\cf7\}\cf4\par
+\tab\cf5 double\cf4  \cf6 P\cf7 ()\cf4\par
+\tab\cf7\{\cf4\par
+\tab\tab\cf5 return\cf4  \cf9 a\cf7 *\cf9 b\cf7 ;\cf4\par
+\tab\cf7\}\cf4\par
+\par
+\tab\cf5 void\cf4  \cf6 show\cf7 ()\cf4\par
+\tab\cf7\{\cf4\par
+\tab\tab\cf6 printf\cf7 (\cf3 "a=%3.0f,  b=%3.0f \\n"\cf7 ,\cf9 a\cf7 ,\cf9 b\cf7 );\cf4\par
+\tab\cf7\}\cf4\par
+\cf7\};\cf4\par
+\cf12 //-----------\cf4\par
+\cf5 class\cf4  \cf8 Truk\cf4  \cf7 :\cf4  \cf5 public\cf4  \cf8 IOper\cf4\par
+\cf7\{\cf4\par
+\cf5 public\cf7 :\cf4\par
+\tab\cf5 double\cf4  \cf9 a\cf7 ,\cf4  \cf9 b\cf7 ,\cf9 c\cf7 ;\cf4\par
+\tab\cf6 Truk\cf7 (\cf5 double\cf4  \cf10 a\cf7 ,\cf4  \cf5 double\cf4  \cf10 b\cf7 ,\cf5 double\cf4  \cf10 c\cf7 )\cf4  \cf7 :\cf9 a\cf7 (\cf10 a\cf7 ),\cf4  \cf9 b\cf7 (\cf10 b\cf7 ),\cf4  \cf9 c\cf7 (\cf10 c\cf7 )\{\}\cf4\par
+\tab\cf5 double\cf4  \cf6 S\cf7 ()\cf4\par
+\tab\cf7\{\cf4\par
+\tab\tab\cf5 return\cf4  \cf11 333\cf7 ;\cf4\par
+\tab\cf7\}\cf4\par
+\tab\cf5 void\cf4  \cf6 show\cf7 ()\cf4\par
+\tab\cf7\{\cf4\par
+\tab\tab\cf6 printf\cf7 (\cf3 "a=%3.0f,  b=%3.0f,  c=%3.0f \\n"\cf7 ,\cf4  \cf9 a\cf7 ,\cf4  \cf9 b\cf7 ,\cf9 c\cf7 );\cf4\par
+\tab\cf7\}\cf4\par
+\cf7\};\cf4\par
+\cf5 void\cf4  \cf6 MyFun\cf7 (\cf8 IOper\cf7 *\cf4  \cf10 g\cf7 )\cf4\par
+\cf7\{\cf4\par
+\tab\cf10 g\cf7 ->\cf6 show\cf7 ();\cf4\par
+\cf7\}\cf4\par
+\cf5 void\cf4  \cf6 main\cf7 ()\cf4\par
+\cf7\{\cf4\par
+\tab\cf8 Rect\cf7 *\cf4  \cf6 r\cf7 =\cf4  \cf5 new\cf4  \cf8 Rect\cf7 (\cf11 2\cf7 ,\cf4  \cf11 3\cf7 );\cf4\par
+\tab\cf8 IOper\cf7 *\cf4  \cf6 p1\cf4  \cf7 =\cf4  \cf6 r\cf7 ;\cf4\par
+\tab\cf6 MyFun\cf7 (\cf6 r\cf7 );\cf4\par
+\tab\cf6 cout\cf4  \cf7 <<\cf4  \cf6 p1\cf7 ->\cf6 S\cf7 ()\cf4  \cf7 <<\cf4  \cf6 endl\cf7 ;\cf4\par
+\tab\cf8 ISecond\cf7 *\cf4  \cf6 s\cf4  \cf7 =\cf4  \cf5 new\cf4  \cf8 Rect\cf7 (\cf11 2\cf7 ,\cf4  \cf11 3\cf7 );\cf4\par
+\tab\cf6 s\cf7 ->\cf6 printt\cf7 ();\cf4\par
+\tab\cf6 p1\cf4  \cf7 =\cf4  \cf5 new\cf4  \cf8 Truk\cf7 (\cf11 2\cf7 ,\cf11 2\cf7 ,\cf11 1\cf7 );\cf4\par
+\tab\cf6 cout\cf4  \cf7 <<\cf4  \cf6 p1\cf7 ->\cf6 S\cf7 ()\cf4  \cf7 <<\cf4  \cf6 endl\cf7 ;\cf4\par
+\tab\cf8 IOper\cf7 *\cf4  \cf7 *\cf4  \cf6 A\cf4  \cf7 =\cf4  \cf5 new\cf4  \cf8 IOper\cf7 *[\cf11 3\cf7 ];\cf4\par
+\tab\cf6 A\cf7 [\cf11 0\cf7 ]\cf4  \cf7 =\cf4  \cf5 new\cf4  \cf8 Rect\cf7 (\cf11 2\cf7 ,\cf4  \cf11 3\cf7 );;\cf4\par
+\tab\cf6 A\cf7 [\cf11 1\cf7 ]\cf4  \cf7 =\cf4  \cf5 new\cf4  \cf8 Truk\cf7 (\cf11 2\cf7 ,\cf4  \cf11 2\cf7 ,\cf4  \cf11 1\cf7 );\cf4\par
+\tab\cf6 system\cf7 (\cf3 "pause"\cf7 );\cf4\par
+\cf7\}\cf0\highlight0\f0\fs22\par
+\'ce\'ef\'e8\'f1\'e0\'f2\'e8 \'b3\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1 \'e7 \'ef\'b3\'e4\'f2\'f0\'e8\'ec\'ea\'ee\'fe \'f3\'e7\'e0\'e3\'e0\'eb\'fc\'ed\'e5\'ed\'e8\'f5 \'f2\'e8\'ef\'b3\'e2 \'e4\'e0\'ed\'e8\'f5 (\'f8\'e0\'e1\'eb\'ee\'ed\'b3\'e2). \'cf\'ee\'f2\'b3\'ec \'f0\'e5\'e0\'eb\'b3\'e7\'f3\'e2\'e0\'f2\'e8 \'e4\'e2\'e0 \'ea\'eb\'e0\'f1\'e8, \'f9\'ee \'f0\'e5\'e0\'eb\'b3\'e7\'ee\'e2\'f3\'fe\'f2\'fc \'e4\'e0\'ed\'e8\'e9 \'b3\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1.\par
+\cf1\highlight2\f1\fs19 #include\cf3 <iostream>\cf4\par
+\cf5 using\cf4  \cf5 namespace\cf4  \cf6 std\cf7 ;\cf4\par
+\par
+\cf5 template\cf7 <\cf5 class\cf4  \cf8 T\cf7 >\cf4\par
+\cf5 __interface\cf4  \cf8 IComparable\cf4\par
+\cf7\{\cf4\par
+\tab\cf5 int\cf4  \cf6 compareTo\cf7 (\cf8 T\cf7 *\cf4  obj\cf7 );\cf4\par
+\cf7\};\cf4\par
+\cf12 //----------------------\cf4\par
+\cf5 class\cf4  \cf8 Rect\cf4  \cf7 :\cf4  \cf5 public\cf4  \cf8 IComparable\cf7 <\cf8 Rect\cf7 >\cf4\par
+\cf7\{\cf4\par
+\cf5 public\cf7 :\cf4\par
+\tab\cf5 double\cf4  \cf9 a\cf7 ,\cf4  \cf9 b\cf7 ;\cf4\par
+\tab\cf6 Rect\cf7 (\cf5 double\cf4  \cf10 a\cf7 ,\cf4  \cf5 double\cf4  \cf10 b\cf7 )\cf4  \cf7 :\cf9 a\cf7 (\cf10 a\cf7 ),\cf4  \cf9 b\cf7 (\cf10 b\cf7 )\{\}\cf4\par
+\par
+\tab\cf5 int\cf4  \cf6 compareTo\cf7 (\cf8 Rect\cf7 *\cf4  \cf10 obj\cf7 )\cf4\par
+\tab\cf7\{\cf4\par
+\tab\tab\cf5 return\cf4  \cf7 (\cf9 a\cf4  \cf7 +\cf4  \cf9 b\cf7 )\cf4  \cf7 -\cf4  \cf7 (\cf10 obj\cf7 ->\cf9 a\cf4  \cf7 +\cf4  \cf10 obj\cf7 ->\cf9 b\cf7 );\cf4\par
+\tab\cf7\}\cf4\par
+\cf7\};\cf4\par
+\cf12 //-----------\cf4\par
+\cf5 class\cf4  \cf8 Truk\cf4  \cf7 :\cf4  \cf5 public\cf4  \cf8 IComparable\cf7 <\cf8 Truk\cf7 >\cf4\par
+\cf7\{\cf4\par
+\cf5 public\cf7 :\cf4\par
+\tab\cf5 double\cf4  \cf9 a\cf7 ,\cf4  \cf9 b\cf7 ,\cf9 c\cf7 ;\cf4\par
+\tab\cf6 Truk\cf7 (\cf5 double\cf4  \cf10 a\cf7 ,\cf4  \cf5 double\cf4  \cf10 b\cf7 ,\cf5 double\cf4  \cf10 c\cf7 )\cf4  \cf7 :\cf9 a\cf7 (\cf10 a\cf7 ),\cf4  \cf9 b\cf7 (\cf10 b\cf7 ),\cf4  \cf9 c\cf7 (\cf10 c\cf7 )\{\}\cf4\par
+\tab\cf5 int\cf4  \cf6 compareTo\cf7 (\cf8 Truk\cf7 *\cf4  \cf10 obj\cf7 )\cf4\par
+\tab\cf7\{\cf4\par
+\tab\tab\cf5 return\cf4  \cf9 a\cf4  \cf7 -\cf4  \cf10 obj\cf7 ->\cf9 a\cf7 ;\cf4\par
+\tab\cf7\}\cf4\par
+\cf7\};\cf4\par
+\cf5 void\cf4  \cf6 main\cf7 ()\cf4\par
+\cf7\{\cf4\par
+\tab\cf8 Rect\cf7 *\cf4  \cf6 r\cf7 =\cf4  \cf5 new\cf4  \cf8 Rect\cf7 (\cf11 7\cf7 ,\cf4  \cf11 3\cf7 );\cf4\par
+\tab\cf8 Rect\cf7 *\cf4  \cf6 r2\cf4  \cf7 =\cf4  \cf5 new\cf4  \cf8 Rect\cf7 (\cf11 3\cf7 ,\cf4  \cf11 2\cf7 );\cf4\par
+\tab\cf5 if\cf4  \cf7 (\cf6 r\cf7 ->\cf6 compareTo\cf7 (\cf6 r2\cf7 )\cf4  \cf7 ==\cf4  \cf11 0\cf7 )\cf4\par
+\tab\tab\cf6 cout\cf4  \cf7 <<\cf4  \cf3 "equal \\n"\cf7 ;\cf4\par
+\tab\cf5 else\cf4\par
+\tab\tab\cf5 if\cf4  \cf7 (\cf6 r\cf7 ->\cf6 compareTo\cf7 (\cf6 r2\cf7 )\cf4  \cf7 >\cf4  \cf11 0\cf7 )\cf4\par
+\tab\tab\tab\cf6 cout\cf4  \cf7 <<\cf4  \cf3 "r>r2 \\n"\cf7 ;\cf4\par
+\tab\tab\cf5 else\cf4\par
+\tab\tab\cf7\{\cf4\par
+\tab\tab\tab\cf6 cout\cf4  \cf7 <<\cf4  \cf3 "r<r2 \\n"\cf7 ;\cf4\par
+\tab\tab\cf7\}\cf4\par
+\tab\cf6 system\cf7 (\cf3 "pause"\cf7 );\cf4\par
+\cf7\}\cf0\highlight0\f0\fs22\par
+\'d0\'e5\'e0\'eb\'b3\'e7\'f3\'e2\'e0\'f2\'e8 \'b3\'ed\'f2\'e5\'f0\'f4\'e5\'e9\'f1 \'e7 \'e2\'e8\'ea\'ee\'f0\'e8\'f1\'f2\'e0\'ed\'ed\'ff\'ec \'ed\'e5\'f2\'e8\'ef\'b3\'e7\'ee\'e2\'e0\'ed\'ee\'e3\'ee \'ef\'ee\'ea\'e0\'e6\'f7\'e8\'ea\'e0 (\f2\lang1033 void*\f0\lang1058 )\par
+\cf1\highlight2\f1\fs19 #include\cf3 <iostream>\cf4\par
+\cf5 using\cf4  \cf5 namespace\cf4  \cf6 std\cf7 ;\cf4\par
+\par
+\cf5 __interface\cf4  \cf8 IComparable\cf4\par
+\cf7\{\cf4\par
+\tab\cf5 int\cf4  \cf6 compareTo\cf7 (\cf5 void\cf7 *\cf4  obj\cf7 );\cf4\par
+\cf7\};\cf4\par
+\cf12 //----------------------\cf4\par
+\cf5 class\cf4  \cf8 Rect\cf4  \cf7 :\cf4  \cf5 public\cf4  \cf8 IComparable\cf4\par
+\cf7\{\cf4\par
+\cf5 public\cf7 :\cf4\par
+\tab\cf5 double\cf4  \cf9 a\cf7 ,\cf4  \cf9 b\cf7 ;\cf4\par
+\tab\cf6 Rect\cf7 (\cf5 double\cf4  \cf10 a\cf7 ,\cf4  \cf5 double\cf4  \cf10 b\cf7 )\cf4  \cf7 :\cf9 a\cf7 (\cf10 a\cf7 ),\cf4  \cf9 b\cf7 (\cf10 b\cf7 )\{\}\cf4\par
+\par
+\tab\cf5 int\cf4  \cf6 compareTo\cf7 (\cf5 void\cf7 *\cf4  \cf10 obj\cf7 )\cf4\par
+\tab\cf7\{\cf4\par
+\tab\tab\cf8 Rect\cf7 *\cf6 temp\cf4  \cf7 =\cf4  \cf7 (\cf8 Rect\cf7 *)\cf10 obj\cf7 ;\cf4\par
+\tab\tab\cf5 return\cf4  \cf7 (\cf9 a\cf4  \cf7 +\cf4  \cf9 b\cf7 )\cf4  \cf7 -\cf4  \cf7 (\cf6 temp\cf7 ->\cf9 a\cf4  \cf7 +\cf4  \cf6 temp\cf7 ->\cf9 b\cf7 );\cf4\par
+\tab\cf7\}\cf4\par
+\cf7\};\cf4\par
+\cf12 //-----------\cf4\par
+\cf5 class\cf4  \cf8 Truk\cf4  \cf7 :\cf4  \cf5 public\cf4  \cf8 IComparable\cf4\par
+\cf7\{\cf4\par
+\cf5 public\cf7 :\cf4\par
+\tab\cf5 double\cf4  \cf9 a\cf7 ,\cf4  \cf9 b\cf7 ,\cf9 c\cf7 ;\cf4\par
+\tab\cf6 Truk\cf7 (\cf5 double\cf4  \cf10 a\cf7 ,\cf4  \cf5 double\cf4  \cf10 b\cf7 ,\cf5 double\cf4  \cf10 c\cf7 )\cf4  \cf7 :\cf9 a\cf7 (\cf10 a\cf7 ),\cf4  \cf9 b\cf7 (\cf10 b\cf7 ),\cf4  \cf9 c\cf7 (\cf10 c\cf7 )\{\}\cf4\par
+\tab\cf5 int\cf4  \cf6 compareTo\cf7 (\cf5 void\cf7 *\cf4  \cf10 obj\cf7 )\cf4\par
+\tab\cf7\{\cf4\par
+\tab\tab\cf5 return\cf4  \cf9 a\cf4  \cf7 -\cf4  \cf7 ((\cf8 Truk\cf7 *)\cf10 obj\cf7 )->\cf9 a\cf7 ;\cf4\par
+\tab\cf7\}\cf4\par
+\cf7\};\cf4\par
+\cf5 void\cf4  \cf6 main\cf7 ()\cf4\par
+\cf7\{\cf4\par
+\tab\cf12 //void*-\f3\'ed\'e5\'f2\'e8\'ef\'b3\'e7\'ee\'e2\'e0\'ed\'e8\'e9 \'ef\'ee\'ea\'e0\'e6\'f7\'e8\'ea\cf4\par
+\tab\cf12 //int* pi=new int;\cf4\par
+\tab\cf12 //void* pv = pi;\cf4\par
+\tab\cf12 //double* pd = (double*)pv;\cf4\par
+\par
+\tab\cf8 Rect\cf7 *\cf4  \cf6 r\cf7 =\cf4  \cf5 new\cf4  \cf8 Rect\cf7 (\cf11 7\cf7 ,\cf4  \cf11 3\cf7 );\cf4\par
+\tab\cf8 Rect\cf7 *\cf4  \cf6 r2\cf4  \cf7 =\cf4  \cf5 new\cf4  \cf8 Rect\cf7 (\cf11 3\cf7 ,\cf4  \cf11 2\cf7 );\cf4\par
+\tab\cf8 Truk\cf7 *\cf4  \cf6 tr\cf4  \cf7 =\cf4  \cf5 new\cf4  \cf8 Truk\cf7 (\cf11 2\cf7 ,\cf11 2\cf7 ,\cf11 1\cf7 );\cf4\par
+\tab\cf5 if\cf4  \cf7 (\cf6 r\cf7 ->\cf6 compareTo\cf7 (\cf6 r2\cf7 )\cf4  \cf7 ==\cf4  \cf11 0\cf7 )\cf4\par
+\tab\tab\cf6 cout\cf4  \cf7 <<\cf4  \cf3 "equal \\n"\cf7 ;\cf4\par
+\tab\cf5 else\cf4\par
+\tab\tab\cf5 if\cf4  \cf7 (\cf6 r\cf7 ->\cf6 compareTo\cf7 (\cf6 r2\cf7 )\cf4  \cf7 >\cf4  \cf11 0\cf7 )\cf4\par
+\tab\tab\tab\cf6 cout\cf4  \cf7 <<\cf4  \cf3 "r>r2 \\n"\cf7 ;\cf4\par
+\tab\tab\cf5 else\cf4\par
+\tab\tab\cf7\{\cf4\par
+\tab\tab\tab\cf6 cout\cf4  \cf7 <<\cf4  \cf3 "r<r2 \\n"\cf7 ;\cf4\par
+\tab\tab\cf7\}\cf4\par
+\tab\cf6 system\cf7 (\cf3 "pause"\cf7 );\cf4\par
+\cf7\}\cf0\highlight0\f2\fs22\lang9\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+}
+ 
